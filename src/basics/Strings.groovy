@@ -1,3 +1,4 @@
+package basics
 //string
 
 //single code is also a string

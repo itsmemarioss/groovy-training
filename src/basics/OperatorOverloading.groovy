@@ -1,3 +1,5 @@
+package basics
+
 @groovy.transform.ToString
 class Account{
     BigDecimal balance
