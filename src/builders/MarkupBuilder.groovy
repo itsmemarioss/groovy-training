@@ -35,10 +35,10 @@ builder.html {
                 th "id"
                 th "name"
             }
-            tr {
-                languages.each {
-                    td "$it.id"
-                    td "$it.name"
+            languages.each { lang ->
+                tr {
+                    td lang.id
+                    td lang.name
                 }
             }
         }
@@ -60,12 +60,16 @@ builder.html {
       <tr>
         <td>1</td>
         <td>java</td>
+      </tr>
+      <tr>
         <td>2</td>
         <td>typescript</td>
+      </tr>
+      <tr>
         <td>3</td>
         <td>groovy</td>
       </tr>
     </table>
   </body>
-</html> 
+</html>
 */
