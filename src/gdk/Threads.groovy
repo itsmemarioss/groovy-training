@@ -20,7 +20,7 @@ Thread.start('push') {
 }
 
 Thread.start('pop') {
-    for ( in in 0..9) {
+    for ( i in 0..9) {
         sleep 200
         println "${Thread.currentThread().name}\t: ${queue.take()}"
     }
