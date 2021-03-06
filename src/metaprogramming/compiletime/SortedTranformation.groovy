@@ -3,11 +3,11 @@ import groovy.transform.Canonical
 
 @Canonical
 @Sortable(includes=["firstName"])
-class Person{
+class Employee{
     String firstName
     String lastName
 }
 
-def team = [new Person(firstName:"Mario"),new Person(firstName:"John")]
+def team = [new Employee(firstName:"Mario"),new Employee(firstName:"John")]
 
 println team.toSorted()

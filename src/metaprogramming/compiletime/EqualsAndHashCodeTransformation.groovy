@@ -1,12 +1,11 @@
-@groovy.transform.EqualsAndHashCode(excludes = ["last"])
-class Person {
+@groovy.transform.EqualsAndHashCode(excludes = ["breed"])
+class Animal {
 
-    String firstName
-    String last
-    String email
+    String name
+    String breed
 }
 
-Person p1 = new Person(firstName:"mario", last:"sousa")
-Person p2 = new Person(firstName:"mario", last:"souza")
+Animal a1 = new Animal(name:"dog", breed:"dalmatian")
+Animal a2 = new Animal(name:"cat")
 
-assert p1 == p2
+assert a1 == a2

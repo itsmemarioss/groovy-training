@@ -1,10 +1,10 @@
 @groovy.transform.ToString(includeNames=true, excludes=["email"])
-class Person {
+class Roommate {
 
     String firstName
     String last
     String email
 }
 
-Person p = new Person(firstName:"mario", last:"sousa")
-println p
+Roommate roommate = new Roommate(firstName:"mario", last:"sousa")
+println roommate
